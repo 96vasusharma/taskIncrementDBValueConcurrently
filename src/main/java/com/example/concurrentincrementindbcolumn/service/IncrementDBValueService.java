@@ -20,7 +20,7 @@ public class IncrementDBValueService {
 	private IncrementDBValueRepository incrementDBValueRepository;
 	
 	@Transactional
-	public void incrementDBValue() {
+	synchronized public void incrementDBValue() {
 		
 		// GET
 		Optional<SingleValueModel> singleValueModelOptional = incrementDBValueRepository.findById(SINGLE_DB_VALUE_ID);
