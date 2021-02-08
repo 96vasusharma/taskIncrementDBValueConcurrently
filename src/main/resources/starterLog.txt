@@ -1,0 +1,17 @@
+1) Execute src\main\resources\seed_queries.sql file for DB structure.
+
+2)	Java (preferably java 8) must be installed to run the application.
+	Go to the project root location (location where you downloaded the project)
+	Open command prompt at this location and execute the below command :-
+	
+	mvnw package
+	
+	And then the below command :-
+	
+	java -jar target\concurrent-increment-in-db-column-0.0.1-SNAPSHOT.jar
+	
+3) JMeter file is at location src\main\resources\task.jmx
+
+4) http://localhost:8090/incrementDBValue is the URL end-point 
+	POST HTTP method is to be used.
+	(as mentioned in the JMX file)
