@@ -19,7 +19,6 @@ public class IncrementDBValueService {
 	@Autowired
 	private IncrementDBValueRepository incrementDBValueRepository;
 	
-	@Transactional
 	synchronized public void incrementDBValue() {
 		
 		// GET

@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Custom files to ignore ###
+src/main/resources/otherUserTestFile.jmx
