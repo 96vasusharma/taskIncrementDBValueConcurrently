@@ -10,8 +10,8 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 @Entity
 
 // caching the entity object also not solving the purpose
-//@Cacheable
-//@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class SingleValueModel {
 
 	@Id

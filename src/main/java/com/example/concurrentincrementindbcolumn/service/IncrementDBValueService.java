@@ -33,6 +33,14 @@ public class IncrementDBValueService {
 		}
 	}
 
+	public void updateDBValue(int value) {
+		// TODO Auto-generated method stub
+		
+		// UPDATE
+		incrementDBValueRepository.updateDBValue(value);
+		
+	}
+
 //	Below approaching is causing RTOs
 	
 //	@PersistenceContext
